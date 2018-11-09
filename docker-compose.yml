@@ -11,9 +11,9 @@ services:
     depends_on:
       - postgres
     environment:
-      DATABASE_URL: postgres://todoapp@postgres/todos
+      DATABASE_URL: "postgres://otzdihldmrwkto:e13d61099c92f5ba4e551f218c3bbd4544443a7f94f2628c513aa25834d531ae@ec2-23-23-101-25.compute-1.amazonaws.com:5432/dc5asvpgl9u8r0"
   postgres:
     image: healthcheck/postgres:alpine
     environment:
-      POSTGRES_USER: todoapp
-      POSTGRES_DB: todos
+      POSTGRES_USER: otzdihldmrwkto
+      POSTGRES_DB: dc5asvpgl9u8r0
